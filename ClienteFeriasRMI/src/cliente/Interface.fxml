@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="root" prefHeight="165.0" prefWidth="306.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="cliente.Client">
+  <children>
+    <Pane id="root" layoutX="-9.0" layoutY="0.0" prefHeight="165.0" prefWidth="315.0">
+      <children>
+        <Text id="label" layoutX="23.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Endereço do servidor" />
+        <Text id="label" layoutX="23.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Porta" />
+        <TextField id="field" fx:id="tfServerAddress" layoutX="23.0" layoutY="47.0" prefHeight="34.0" prefWidth="260.0" />
+        <TextField id="field" fx:id="tfServerPort" layoutX="23.0" layoutY="100.0" prefHeight="34.0" prefWidth="127.09375" />
+        <Button id="btn" fx:id="btnConnect" layoutX="186.0" layoutY="100.0" mnemonicParsing="false" onAction="#btnConnectOnAction" prefHeight="34.0" prefWidth="97.0" text="Conectar" />
+      </children>
+    </Pane>
+  </children>
+  <stylesheets>
+    <URL value="@client.css" />
+  </stylesheets>
+</AnchorPane>

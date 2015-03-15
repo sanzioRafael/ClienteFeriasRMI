@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="root" prefHeight="415.0" prefWidth="647.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="cliente.ConnectedClient">
+  <!-- TODO Add Nodes -->
+  <children>
+    <TabPane layoutX="0.0" layoutY="0.0" prefHeight="415.0" prefWidth="647.0" tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+        <Tab fx:id="tabSendArchive" text="Enviar Arquivos">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="404.0" prefWidth="662.0">
+              <children>
+                <TextField id="field" fx:id="tfSendArchive" layoutX="26.0" layoutY="56.0" prefHeight="34.0" prefWidth="451.0" />
+                <Button id="btn" fx:id="btnSelectArchiveToSend" layoutX="520.0" layoutY="56.0" mnemonicParsing="false" onAction="#btnSelectArchiveToSendOnAction" prefHeight="33.999900000002526" prefWidth="113.0" text="Selecionar" />
+                <Button id="btn" fx:id="btnSendArchive" layoutX="278.0" layoutY="166.0" mnemonicParsing="false" onAction="#SendArchiveOnAction" prefHeight="43.0" prefWidth="92.0" text="Enviar" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab fx:id="tabCompactArchive" text="Compactar Arquivos">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <Text layoutX="92.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="">
+                  <font>
+                    <Font size="18.0" />
+                  </font>
+                </Text>
+                <Button id="btn" fx:id="btnSelectCompactArchive" layoutX="513.0" layoutY="50.0" mnemonicParsing="false" onAction="#btnSelectArchiveToCompactOnAction" prefHeight="38.0" prefWidth="90.0" text="Selecionar" />
+                <TextField id="field" fx:id="tfCompactFiles" layoutX="22.0" layoutY="54.0" prefHeight="34.0" prefWidth="448.0" />
+                <Button id="btn" fx:id="btnCompact" layoutX="279.0" layoutY="170.0" mnemonicParsing="false" onAction="#btnCompactOnAction" prefHeight="38.0" prefWidth="103.0" text="Compactar" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab fx:id="tabRedVideo" text="Video com faixa">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <TextField id="field" layoutX="42.0" layoutY="57.0" prefHeight="36.0" prefWidth="393.0" />
+                <Button id="btn" fx:id="btnSelectRedVideo" layoutX="510.0" layoutY="57.0" mnemonicParsing="false" onAction="#btnSelectRedVideoOnAction" prefHeight="36.0" prefWidth="89.0" text="Selecionar" />
+                <Button id="btn" fx:id="btnSendRedVideo" layoutX="283.0" layoutY="165.0" mnemonicParsing="false" onAction="#btnSendRedVideoOnAction" prefHeight="35.999900000002526" prefWidth="99.0" text="Adicionar" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab fx:id="tabSendVideo" text="Enviar video">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <TextField id="field" layoutX="35.0" layoutY="54.0" prefHeight="38.0" prefWidth="435.0" />
+                <Button id="btn" fx:id="btnSelectVideo" layoutX="523.0" layoutY="54.0" mnemonicParsing="false" onAction="#btnSelectVideoOnAction" prefHeight="38.0" prefWidth="99.0" text="Selecionar" />
+                <Button id="btn" fx:id="btnSendVideo" layoutX="274.0" layoutY="173.0" mnemonicParsing="false" onAction="#btnSendVideoOnAction" prefHeight="38.0" prefWidth="99.00009999999747" text="Adicionar" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab fx:id="tabChat" text="Chat">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="220.0" prefWidth="470.0">
+              <children>
+                <TextField id="field" fx:id="tfChatName" layoutX="190.0" layoutY="69.0" prefHeight="28.265625" prefWidth="289.0" />
+                <Text id="label" layoutX="41.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome de usuario" />
+                <Button id="btn" fx:id="btnEnterChat" layoutX="512.0" layoutY="65.0" mnemonicParsing="false" onAction="#btnEnterChatOnAction" prefHeight="37.0" prefWidth="88.0" text="Bater papo" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+  </children>
+  <stylesheets>
+    <URL value="@client.css" />
+  </stylesheets>
+</AnchorPane>
